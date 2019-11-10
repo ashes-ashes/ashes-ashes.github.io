@@ -1,0 +1,75 @@
+.app {
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+
+    background-color: rgb(163, 153, 139);
+    font-family: 'Roboto', sans-serif;
+
+  padding-top: 150px; 
+
+}
+
+.nav {
+    display: flex;
+
+    li {
+        margin: 10px;
+    }
+}
+
+.projects-nav {
+    display: flex;
+
+    li {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #EADEC7;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+p {
+    width: 500px;
+    padding: 15px;
+    margin: 5px;
+}
+
+a {
+
+}
+
+a:hover {
+    color: #EADEC7;
+}
+
+a.active {
+
+}
+
+a:active {
+
+}
