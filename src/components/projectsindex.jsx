@@ -1,27 +1,36 @@
 import React from 'react';
-import { NavLink, Switch, Route } from 'react-router-dom';
-
-import Project from './project';
 
 class ProjectsIndex extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleMouseOver = this.handleMouseOver.bind(this);
+        this.handleMouseOut = this.handleMouseOut.bind(this);
+    }
+
+    handleMouseOver(app) {
+        this.props.setStyle(app);
+    }
+
+    handleMouseOut() {
+        this.props.setStyle(null);
+    }
+
     render () { 
-    console.log(this.props);
+
         return (
         <div>
             <ul className="projects-nav">
                 <li>
-                    <NavLink to="/projects/enyo" activeClassName="active">enyo</NavLink>
+                    <a href="https://enyo-chat.herokuapp.com/" onMouseOver={() => this.handleMouseOver('enyo')} onMouseOut={this.handleMouseOut}>enyo</a>
                 </li>
                 <li>
-                    <NavLink to="/projects/offshoot" activeClassName="active">offshoot</NavLink>
+                        <a href="http://offshoots.herokuapp.com/" onMouseOver={() => this.handleMouseOver('offshoot')} onMouseOut={this.handleMouseOut}>offshoot</a>
                 </li>
                 <li>
-                    <NavLink to="/projects/vivari" activeClassName="active">vivari</NavLink>
+                        <a href="https://ashes-ashes.github.io/vivari/" onMouseOver={() => this.handleMouseOver('vivari')} onMouseOut={this.handleMouseOut}>vivari</a>
                 </li>
             </ul>
-            {/* <Switch>
-                <Route path="/projects/:project" children={<Project />} />
-            </Switch> */}
         </div>
 
         );

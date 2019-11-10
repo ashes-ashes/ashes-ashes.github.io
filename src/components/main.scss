@@ -1,6 +1,3 @@
-.app {
-
-}
 
 .main {
   display: flex;
@@ -15,11 +12,13 @@
   left: 0px;
   right: 0px;
 
+  padding-top: 150px;
 
     background-color: rgb(163, 153, 139);
     font-family: 'Roboto', sans-serif;
 
-  padding-top: 150px; 
+    transition-property: background-color;
+    transition-duration: .3s;
 
 }
 
@@ -72,4 +71,84 @@ a.active {
 
 a:active {
 
+}
+
+.enyo {
+    background-color: #333333;
+    color: #d3d3d3;
+
+    background-image: url(https://enyo-chat.herokuapp.com/splashbackground.png);
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+
+    h1 {
+        font-family: 'Rajdhani', sans-serif;
+        color: white;
+    }
+
+    h1::before {
+        content: '☍';
+        color: #bf3f3f;
+    }
+
+    .nav a {
+
+    }
+
+    a:hover {
+        color: #bf3f3f;
+    }
+
+    a:active {
+        color: #f57373;
+    }
+}
+
+.offshoot {
+    font-family: monospace;
+    background-color: white;
+    background-image: url(http://offshoots.herokuapp.com/backdrop.png);
+    background-size: cover;
+
+    h1 {
+        font-family: monospace;
+        color: #9ABC45;
+    }
+
+    a:hover {
+        color: #9ABC45;
+    }
+
+    a:active {
+        color: #E1F9A4;
+    }
+
+}
+
+.vivari {
+    background-image: linear-gradient(#232829, black);
+    color: #696969;
+
+    font-family: 'Open Sans', sans-serif;
+
+    h1 {
+        color: palegoldenrod;
+        font-size: 50px;
+        font-family: 'Mansalva', cursive;
+        text-shadow: 0px 0px 20px rgba(255,254,232,0.6);
+    }
+
+    h1::after {
+        content: '𖼔';
+        margin-left: 10px;
+    }
+
+    a:hover {
+        color: palegoldenrod;
+    }
+    
+    a:active {
+        color: white;
+    }
 }
