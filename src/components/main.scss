@@ -26,20 +26,26 @@
     display: flex;
 
     li {
+        width: 150px;
         margin: 10px;
     }
+
+    margin-bottom: 1git add0px;
 }
 
 .projects-nav {
     display: flex;
 
     li {
+        width: 100px;
         margin: 10px;
         font-size: 20px;
     }
 }
 
 h1 {
+    display: block;
+    height: 60px;
     font-size: 60px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -98,6 +104,7 @@ a:active {
 
     a:hover {
         color: #bf3f3f;
+        font-family: 'Rajdhani', sans-serif;
     }
 
     a:active {
@@ -146,9 +153,12 @@ a:active {
 
     a:hover {
         color: palegoldenrod;
+        text-shadow: 0px 0px 10px rgba(255,254,232,0.6);
+        font-family: 'Mansalva', cursive;
     }
     
     a:active {
         color: white;
+        text-shadow: 0px 0px 10px white;
     }
 }
