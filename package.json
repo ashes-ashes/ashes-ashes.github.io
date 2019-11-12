@@ -17,11 +17,14 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
+  "homepage": "http://ashes-ashes.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +43,5 @@
   },
   "devDependencies": {
     "gh-pages": "^2.1.1"
-  },
-  "homepage": "http://ashes-ashes.github.io/react-gh-pages"
+  }
 }
