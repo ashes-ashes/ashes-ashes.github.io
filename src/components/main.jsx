@@ -4,6 +4,7 @@ import { Route, NavLink, withRouter } from 'react-router-dom';
 import './main.scss';
 import About from './about';
 import ProjectsIndex from './projectsindex';
+import Links from './links';
 
 class Main extends React.Component {
 
@@ -37,8 +38,11 @@ class Main extends React.Component {
                 <li><h2><NavLink to="/projects" activeClassName="active">projects</NavLink></h2></li>
                 <li><h2><NavLink to="/links" activeClassName="active">links</NavLink></h2></li>
             </ul>
-            <Route path="/about" component={About} />
-            <Route path="/projects" render={(props) => <ProjectsIndex {...props} setStyle={this.setStyle} />} />
+            <div className="detail">
+              <Route path="/about" component={About} />
+              <Route path="/projects" render={(props) => <ProjectsIndex {...props} setStyle={this.setStyle} />} />
+              <Route path="/links" component={Links} />
+            </div>
           </div>
         </div>
     );
