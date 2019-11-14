@@ -113,7 +113,7 @@ a:active {
     background-color: #333333;
     color: #d3d3d3;
 
-    background-image: url(https://enyo-chat.herokuapp.com/splashbackground.png);
+    background-image: url(/backgrounds/enyo.png);
     background-size: cover;
 
     font-family: 'Roboto', sans-serif;
@@ -155,7 +155,7 @@ a:active {
 .offshoot {
     font-family: monospace;
     background-color: white;
-    background-image: url(http://offshoots.herokuapp.com/backdrop.png);
+    background-image: url(/backgrounds/offshoot.png);
     background-size: 100vw;
     background-position: center bottom;
 
