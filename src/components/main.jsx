@@ -37,7 +37,6 @@ class Main extends React.Component {
       )
     }
 
-    console.log(ashflakes);
 
     return(
         <div className={klass}>
