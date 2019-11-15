@@ -108,7 +108,13 @@ a:active {
     }
 }
 
-.enyo {
+.main {
+    background-image: url(/backgrounds/ashbackground.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.main.enyo {
 
     background-color: #333333;
     color: #d3d3d3;
@@ -152,7 +158,7 @@ a:active {
     }
 }
 
-.offshoot {
+.main.offshoot {
     font-family: monospace;
     background-color: white;
     background-image: url(/backgrounds/offshoot.png);
@@ -178,7 +184,7 @@ a:active {
 
 }
 
-.vivari {
+.main.vivari {
     background-image: linear-gradient(#232829, black);
     color: #696969;
 
