@@ -53,9 +53,11 @@ class Main extends React.Component {
               <Route path="/links" component={Links} />
             </div>
           </div>
+          {this.state.hoverStyle !== null ? "" :
           <div className="ashcontainer">
             {ashflakes}
           </div>
+        }
         </div>
     );
   }
