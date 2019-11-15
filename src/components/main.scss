@@ -278,6 +278,9 @@ h4 {
 .skill {
     align-items: flex-end;
     justify-content: space-between;
+    > li {
+        text-align: right;
+    }
 }
 
 .listbox {
@@ -298,8 +301,8 @@ h4 {
 }
 
 [class^='ashflake'] {
-    height: 10px;
-    width: 10px;
+    // height: 10px;
+    // width: 10px;
     border-radius: 5px;
     background-color: #B1A79A;
     position: absolute;
@@ -308,8 +311,11 @@ h4 {
 
 @for $i from 1 to 10 {
     .ashflake#{$i} {
+        $size: #{random(5) + 5}px;
         left: percentage(random(100)/100);
         animation: ashfall #{random(7)+7}s linear #{random(10)}s infinite;
+        height: $size;
+        width: $size;
     }
 }
 
@@ -327,16 +333,36 @@ h4 {
 @media only screen and (max-width: 450px) {
 
     .navbox {
-        transform: scale(.5);
-        padding: 0px;
-        height: 100vw;
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .nav {
+            width: 80vw;
+        }
+
+        .projects-nav {
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50vw;
+        }
+
+        .about-container {
+            h3 {
+                font-size: 20px;
+            }
+        }
     }
 
     .main {
-        justify-content: flex-start;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
     }
 
-    .language {
-        
-    }
+
 }
