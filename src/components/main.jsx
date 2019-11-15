@@ -29,6 +29,16 @@ class Main extends React.Component {
       klass = `main ${this.state.hoverStyle}`;
     }
 
+    let ashflakes = [];
+
+    for (let i = 1; i < 11; i++) {
+      ashflakes.push(
+        <div className={`ashflake${i}`} key={i}></div>
+      )
+    }
+
+    console.log(ashflakes);
+
     return(
         <div className={klass}>
           <div className="navbox">
@@ -43,6 +53,9 @@ class Main extends React.Component {
               <Route path="/projects" render={(props) => <ProjectsIndex {...props} setStyle={this.setStyle} />} />
               <Route path="/links" component={Links} />
             </div>
+          </div>
+          <div className="ashcontainer">
+            {ashflakes}
           </div>
         </div>
     );

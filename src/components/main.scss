@@ -267,7 +267,7 @@ h4 {
 
 .language > li:nth-child(2n) {
         
-    background-color: rgb(119, 111, 97);
+    background-color:rgba(119, 111, 97,0.6);
     color:  #EADEC7;
    
 }
@@ -281,4 +281,40 @@ h4 {
     display: flex;
 
     justify-content: space-between;
+}
+
+//fallingash
+
+.ashcontainer {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+[class^='ashflake'] {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #B1A79A;
+    position: absolute;
+    top: -10px;
+}
+
+@for $i from 1 to 10 {
+    .ashflake#{$i} {
+        left: percentage(random(100)/100);
+        animation: ashfall #{random(7)+7}s linear #{random(10)}s infinite;
+    }
+}
+
+@keyframes ashfall {
+    0% {
+        top: 0%
+    }
+    100% {
+        top: 100%;
+    }
 }
