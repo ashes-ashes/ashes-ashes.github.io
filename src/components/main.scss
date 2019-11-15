@@ -12,6 +12,8 @@
   left: 0px;
   right: 0px;
 
+  overflow: scroll;
+
   padding-top: 50px;
 
     background-color: rgb(163, 153, 139);
@@ -19,6 +21,9 @@
 
     // transition-property: background-color;
     // transition-duration: .3s;
+
+    // transition-property: all;
+    // transition-duration: 1s;
 
 }
 
@@ -29,8 +34,6 @@
         width: 150px;
         margin: 10px;
     }
-
-    margin-bottom: 1git add0px;
 }
 
 .navbox {
@@ -47,7 +50,7 @@
 
     li {
         width: 100px;
-        margin: 0px 10px;
+        padding: 5px 10px;
         font-size: 20px;
     }
 }
@@ -316,5 +319,13 @@ h4 {
     }
     100% {
         top: 100%;
+    }
+}
+
+//media query
+
+@media only screen and (max-width: 450px) {
+    .navbox {
+        transform: scale(.5)
     }
 }

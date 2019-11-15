@@ -4,15 +4,15 @@ class ProjectsIndex extends React.Component {
 
     constructor(props) {
         super(props);
-        this.handleMouseOver = this.handleMouseOver.bind(this);
-        this.handleMouseOut = this.handleMouseOut.bind(this);
+        this.handleMouseEnter = this.handleMouseEnter.bind(this);
+        this.handleMouseLeave = this.handleMouseLeave.bind(this);
     }
 
-    handleMouseOver(app) {
+    handleMouseEnter(app) {
         this.props.setStyle(app);
     }
 
-    handleMouseOut() {
+    handleMouseLeave() {
         this.props.setStyle(null);
     }
 
@@ -21,14 +21,14 @@ class ProjectsIndex extends React.Component {
         return (
         <div>
             <ul className="projects-nav">
-                <li>
-                    <a href="https://enyo-chat.herokuapp.com/" onMouseOver={() => this.handleMouseOver('enyo')} onMouseOut={this.handleMouseOut}>enyo</a>
+                <li onMouseLeave={this.handleMouseLeave}>
+                    <a href="https://enyo-chat.herokuapp.com/" onMouseEnter={() => this.handleMouseEnter('enyo')} >enyo</a>
                 </li>
-                <li>
-                        <a href="http://offshoots.herokuapp.com/" onMouseOver={() => this.handleMouseOver('offshoot')} onMouseOut={this.handleMouseOut}>offshoot</a>
+                <li onMouseLeave={this.handleMouseLeave}>
+                        <a href="http://offshoots.herokuapp.com/" onMouseEnter={() => this.handleMouseEnter('offshoot')}>offshoot</a>
                 </li>
-                <li>
-                        <a href="https://ashes-ashes.github.io/vivari/" onMouseOver={() => this.handleMouseOver('vivari')} onMouseOut={this.handleMouseOut}>vivari</a>
+                <li onMouseLeave={this.handleMouseLeave}>
+                        <a href="https://ashes-ashes.github.io/vivari/" onMouseEnter={() => this.handleMouseEnter('vivari')}>vivari</a>
                 </li>
             </ul>
         </div>
