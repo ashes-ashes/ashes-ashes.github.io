@@ -325,7 +325,18 @@ h4 {
 //media query
 
 @media only screen and (max-width: 450px) {
+
     .navbox {
-        transform: scale(.5)
+        transform: scale(.5);
+        padding: 0px;
+        height: 100vw;
+    }
+
+    .main {
+        justify-content: flex-start;
+    }
+
+    .language {
+        
     }
 }
