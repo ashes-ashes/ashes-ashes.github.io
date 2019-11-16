@@ -57,6 +57,7 @@ body {
 .projects-nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 
     li {
@@ -362,8 +363,8 @@ h4 {
 
         .projects-nav {
             flex-direction: column;
-            justify-content: space-around;
             height: 50vw;
+            justify-content: space-between;
         }
 
         .about-container {
