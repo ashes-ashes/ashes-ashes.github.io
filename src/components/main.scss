@@ -8,6 +8,14 @@ body {
     overflow: auto;
 }
 
+//fix safari
+ul {
+    overflow: auto;
+}
+li {
+    height: fit-content;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -87,20 +95,12 @@ p {
     margin: 5px;
 }
 
-a {
-
-}
-
 a:hover {
     color: #EADEC7;
 }
 
 a.active {
     color: #EADEC7
-}
-
-a:active {
-
 }
 
 .detail {
@@ -219,11 +219,6 @@ a:active {
     h1::after {
         content: '𖼔';
         margin-left: 10px;
-    }
-
-    .navbox {
-        
-
     }
 
     a:hover {
