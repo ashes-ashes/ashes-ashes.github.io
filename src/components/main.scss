@@ -1,47 +1,28 @@
-html {
-    overflow: hidden;
-    height: 100%;
-}
 
-body {
-    height: 100%;
-    overflow: auto;
-}
-
-//fix safari
 ul {
-    overflow: auto;
-}
-li {
-    height: fit-content;
+    min-height: fit-content;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  text-align: center;
+    display: flex;
 
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+    text-align: center;
 
-  overflow: scroll;
-
-  padding-top: 50px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 
     background-color: rgb(163, 153, 139);
     font-family: 'Roboto', sans-serif;
 
-    // transition-property: background-color;
-    // transition-duration: .3s;
+}
 
-    // transition-property: all;
-    // transition-duration: 1s;
-
+.content {
+    width: 100vw;
+    overflow: scroll;
 }
 
 .nav {
@@ -59,6 +40,9 @@ li {
     align-items: center;
 
     padding: 100px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
 
 }
 
@@ -112,6 +96,7 @@ a.active {
     display: flex;
     justify-content: space-between;
     margin: 0px 20px;
+    min-height: 70px;
 }
 
 .social-icon {
@@ -156,7 +141,7 @@ a.active {
     .navbox {
         background-color: rgba($color: #333333, $alpha: 1.0);
         border-radius: 20px;
-        border: 1px solid lightgray
+        border: 1px solid lightgray;
     }
 
     .nav a {
@@ -179,8 +164,9 @@ a.active {
 
 .main.offshoot {
     font-family: monospace;
-    background-color: white;
+    background-color: rgba(255,255,255,0.3);
     background-image: url(/backgrounds/offshoot.png);
+    background-blend-mode: lighten;
     background-size: 100vw;
     background-position: center bottom;
 
@@ -279,6 +265,10 @@ h4 {
     
 }
 
+ul.language.list {
+    width: 100%;
+}
+
 .language > li:nth-child(2n) {
         
     background-color:rgba(119, 111, 97,0.6);
@@ -298,6 +288,12 @@ h4 {
     display: flex;
 
     justify-content: space-between;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 //fallingash
@@ -363,6 +359,7 @@ h4 {
         }
 
         .about-container {
+
             h3 {
                 font-size: 20px;
             }

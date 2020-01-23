@@ -40,24 +40,25 @@ class Main extends React.Component {
 
     return(
         <div className={klass}>
-          <div className="navbox">
-            <h1>{'ashen.works'}</h1>
-            <ul className="nav">
-                <li><h2><NavLink to="/about" activeClassName="active">about</NavLink></h2></li>
-                <li><h2><NavLink to="/projects" activeClassName="active">projects</NavLink></h2></li>
-                <li><h2><NavLink to="/links" activeClassName="active">links</NavLink></h2></li>
-            </ul>
-            <div className="detail">
-              <Route path="/about" component={About} />
-              <Route path="/projects" render={(props) => <ProjectsIndex {...props} setStyle={this.setStyle} />} />
-              <Route path="/links" component={Links} />
+          <div className="content">
+            <div className="navbox">
+              <h1>{'ashen.works'}</h1>
+              <ul className="nav">
+                  <li><h2><NavLink to="/about" activeClassName="active">about</NavLink></h2></li>
+                  <li><h2><NavLink to="/projects" activeClassName="active">projects</NavLink></h2></li>
+                  <li><h2><NavLink to="/links" activeClassName="active">links</NavLink></h2></li>
+              </ul>
+              <div className="detail">
+                <Route path="/about" component={About} />
+                <Route path="/projects" render={(props) => <ProjectsIndex {...props} setStyle={this.setStyle} />} />
+                <Route path="/links" component={Links} />
+              </div>
             </div>
+            {this.state.hoverStyle !== null ? "" :
+            <div className="ashcontainer">
+              {ashflakes}
+            </div>}
           </div>
-          {this.state.hoverStyle !== null ? "" :
-          <div className="ashcontainer">
-            {ashflakes}
-          </div>
-        }
         </div>
     );
   }
