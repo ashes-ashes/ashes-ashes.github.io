@@ -15,7 +15,7 @@ export default function Links() {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/ash-todd-971195100/" className="social-icon">
+                    <a href="https://www.linkedin.com/in/aztodd/" className="social-icon">
                         <img src="icons/linkedin.png" alt="linkedin"/>
                     </a>
                 </li>
