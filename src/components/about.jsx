@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
     return (
         <div className="about-container">
-            <h3>ash / sofia todd • software developer</h3>
+            <h3>ash todd • software developer</h3>
             <h4>skills</h4>
             <ul className="language list">
                 <li>
