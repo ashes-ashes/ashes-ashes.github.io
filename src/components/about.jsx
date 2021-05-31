@@ -7,6 +7,16 @@ export default function About() {
             <h4>skills</h4>
             <ul className="language list">
                 <li>
+                    <h5>JavaScript</h5>
+                    <ul className="skill list">
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Typescript</li>
+                        <li>JQuery</li>
+                        <li>AJAX</li>
+                    </ul>
+                </li>
+                <li>
                     <h5>Ruby</h5>
                     <ul className="skill list">
                         <li>Rails</li>
@@ -15,25 +25,10 @@ export default function About() {
                     </ul>
                 </li>
                 <li>
-                    <h5>JavaScript</h5>
-                    <ul className="skill list">
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>JQuery</li>
-                        <li>Vanilla DOM Manipulation</li>
-                        <li>AJAX</li>
-                    </ul>
-                </li>
-                <li>
-                    <h5>CSS3</h5>
+                    <h5>HTML5/CSS3</h5>
                     <ul className="skill list">
                         <li>SASS</li>
-                    </ul>
-                </li>
-                <li>
-                    <h5>HTML5</h5>
-                    <ul className="skill list">
-                        <li>Canvas</li>
+                        <li>Bootstrap</li>
                     </ul>
                 </li>
                 <li>
